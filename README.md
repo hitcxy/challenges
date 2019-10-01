@@ -1,1 +1,1 @@
-# challenges
+# CTF blockchains challenges
