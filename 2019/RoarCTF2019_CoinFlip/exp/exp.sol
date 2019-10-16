@@ -114,7 +114,7 @@ contract father {
 }
 
 contract son {
-    constructor public {
+    constructor() public {
         P_Bank tmp = P_Bank(0xF60ADeF7812214eBC746309ccb590A5dBd70fc21);
         tmp.Ap();
         tmp.Transfer(0x7ec9f720a8d59bc202490c690139f8c7cbad568d, 1 ether);
